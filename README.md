@@ -16,8 +16,9 @@ Because QR code management should be as fun and straightforward as possible! Whe
 
 Here's a sneak peek at what you can expect:
 
-![Splash Screen](assets/ss/splash.png) ![Home Screen](assets/ss/menu.png) ![QR Generated Screen](assets/ss/generated.png)
-
+| **Splash Screen** 🌅 | **Explore Screen** 🗺️ | **Detail Screen** 📄 |
+|----------------------|------------------------|-----------------------|
+| ![Splash Screen](assets/ss/splash.png) | ![Home Screen](assets/ss/menu.png) | ![Generated QR Screen](assets/ss/generated.png) |
 ## 🖼️ Additional File
 
 Below is an A4-sized landscape image related to *FluxQR*:

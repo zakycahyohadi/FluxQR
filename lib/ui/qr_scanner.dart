@@ -38,7 +38,7 @@ class _QrScannerState extends State < QrScanner > {
               Navigator.pop(context);
             },
         ),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Color(0xFFFF6D40),
         title: Text(
           'QR Scanner',
           style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),

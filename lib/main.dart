@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart'; // Tambahkan import ini
 import 'package:qr_generator_and_scanner/ui/home_screen.dart';
 import 'package:qr_generator_and_scanner/ui/qr_generator.dart';
+import 'package:qr_generator_and_scanner/ui/qr_print.dart';
 import 'package:qr_generator_and_scanner/ui/qr_scanner.dart';
+import 'package:qr_generator_and_scanner/ui/qr_send.dart';
 import 'package:qr_generator_and_scanner/ui/splash_screen.dart';
 
 void main() {
@@ -34,6 +36,8 @@ class MainApp extends StatelessWidget {
         '/home': (context) => const HomeScreen(),
         '/qr': (context) => const QRGenerator(),
         '/qr_scanner': (context) => const QrScanner(),
+        '/send': (context) => const QrSend(),
+        '/print': (context) => const QrPrint(),
       },
     );
   }

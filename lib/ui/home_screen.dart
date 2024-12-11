@@ -9,13 +9,21 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false, // To prevent default leading behavior
         backgroundColor: Colors.transparent,
         elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.settings, color: Colors.black),
+            onPressed: () {
+              // Action for back button
+            },
+        ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.settings, color: Colors.black),
-              onPressed: () {},
+            icon: const Icon(Icons.nightlight_round, color: Colors.black),
+              onPressed: () {
+                // Action for home button
+              },
           ),
         ],
       ),
@@ -114,14 +122,18 @@ class HomeScreen extends StatelessWidget {
                             label: 'Send QR',
                             backgroundColor: const Color(0xFF69F0AF),
                               iconColor: Colors.white,
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.pushNamed(context, '/send');
+                              },
                           ),
                           BuildButton(
                             icon: Icons.print,
                             label: 'Print QR',
                             backgroundColor: const Color(0xFFFFD640),
                               iconColor: Colors.white,
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.pushNamed(context, '/print');
+                              },
                           ),
                         ],
                     ),
